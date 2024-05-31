@@ -9,6 +9,14 @@ st.markdown("""# This is a header NEW
 This is text
 """)
 
+spell = st.secrets['spell']
+key = st.secrets.some_magic_api.key
+
+st.write(spell)
+st.write(key)
+
+
+
 df = pd.DataFrame({
     'first column': list(range(1, 11)),
     'second column': np.arange(10, 101, 10)
